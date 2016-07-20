@@ -1,5 +1,125 @@
 <?php echo $header; ?>
 <main>
-	
+<section class="register-box">
+	<div class="box upload">
+		<div class="icon"></div>
+		<h1>Fel szeretnék tölteni!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+		<a href="#" class="btn brown-border">Feltöltök</a>
+	</div>
+	<div class="box read">
+		<div class="icon"></div>
+		<h1>Olvasni szeretnék!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+		<a href="#" class="btn white-border">Olvasok</a>
+	</div>
+	<div class="box download">
+		<div class="icon"></div>
+		<h1>Le szeretnék tölteni!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+		<a href="#" class="btn black-border">Letöltök</a>
+	</div>
+</section>
+<section class="most-popular i-s-t">
+	<div class="container-full">
+		<h1>Legnépszerűbbek</h1>
+		<ul class="card-wrapper clear">
+			<?php
+				for ($i=0; $i < 9; $i++) {
+			?>
+			<li>
+				<div class="item">
+					<span class="category-color novel"></span>
+					<a href="#">
+						<img src="/upload/images/cards/1.png" alt="1">
+					</a>
+					<a href="#" class="item-author">Paula Hawkins</a>
+					<a href="#" class="item-title">The Girls in the Train</a>
+				</div>
+			</li>
+			<?php
+			}
+			?>
+		</ul>
+		<a href="/kategoria" class="btn brown">Tovább a teljes listához</a>
+	</div>
+</section>
+<section class="dedicatory i-s-t">
+	<div class="container-full">
+		<h1>Ajánló</h1>
+		<ul class="card-wrapper clear">
+			<?php
+				for ($i=0; $i < 9; $i++) {
+			?>
+			<li>
+				<div class="item">
+					<span class="category-color novel"></span>
+					<a href="#">
+						<img src="/upload/images/cards/1.png" alt="1">
+					</a>
+					<a href="#" class="item-author">Paula Hawkins</a>
+					<a href="#" class="item-title">The Girls in the Train</a>
+				</div>
+			</li>
+			<?php
+			}
+			?>
+		</ul>
+		<a href="/kategoria" class="btn brown">Tovább a teljes listához</a>
+	</div>
+</section>
+<section class="latest i-s-t">
+	<div class="container-full">
+		<h1>Legfrissebbek</h1>
+		<ul class="card-wrapper clear">
+			<?php
+				for ($i=0; $i < 9; $i++) {
+			?>
+			<li>
+				<div class="item">
+					<span class="category-color novel"></span>
+					<a href="#">
+						<img src="/upload/images/cards/1.png" alt="1">
+					</a>
+					<a href="#" class="item-author">Paula Hawkins</a>
+					<a href="#" class="item-title">The Girls in the Train</a>
+				</div>
+			</li>
+			<?php
+			}
+			?>
+		</ul>
+		<a href="/kategoria" class="btn brown">Tovább a teljes listához</a>
+	</div>
+</section>
+<section class="attentive">
+	<div class="container-full">
+		<h1>Idefigyelő</h1>
+		<ul class="ul card-wrapper-2 clear">
+			<?php
+			for ($i=0; $i < 6; $i++) {
+			?>
+			<li>
+				<article class="item">
+					<span class="new-date">2016. május 12.</span>
+					<a href="#" class="new-owner">Mindnet Kiadó</a>
+					<a href="#">
+						<img src="/upload/images/article/1.png" alt="1">
+					</a>
+					<a href="#" class="new-title">Sci-fi írót keresünk</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque qui quasi, corporis ipsum autem? Sequi magnam optio, blanditiis!</p>
+					<a href="#" class="btn grey-mini">Érdekel</a>
+				</article>
+			</li>
+			<?php
+			}
+			?>
+		</ul>
+		<a href="/kategoria" class="btn brown">Tovább a teljes listához</a>
+	</div>
+</section>
 </main>
 <?php echo $footer; ?>

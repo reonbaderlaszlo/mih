@@ -1,0 +1,40 @@
+/* Footer */
+footer {
+    font-weight: 300;
+    background: #2E363C;
+    padding: 10px 0;
+
+    .col {
+        width: 20%;
+        float: left;
+    }
+
+    .mih-logo {
+        display: block;
+        width: 120px;
+        height: 55px;
+        background: url("../images/header/mih-logo.svg") no-repeat 0 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        color: #F4F6F6;
+
+        @include transition-all;
+
+        &:hover {
+            color: #A6855B;
+            text-decoration: underline;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        color: #F4F6F6;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}

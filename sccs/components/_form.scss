@@ -1,0 +1,21 @@
+/* Forms */
+select {
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 43px;
+    border-radius: 3px;
+    background-color: #D6DADD;
+    float: left;
+    background: #D6DADD url("../images/base/arrow-down.png") no-repeat 92% 55%;
+    appearance: none;
+    padding: 0 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+[type="checkbox"]{
+    -webkit-appearance: checkbox;
+}

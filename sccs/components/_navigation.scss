@@ -1,0 +1,27 @@
+/* Navigation */
+nav {
+    font-family: 'Georgia', serif;
+
+    ul {
+    	margin: 10px -5px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    a {
+        background: #0F1214;
+        padding: 12px 24px;
+        border-radius: 4px;
+        color: #F4F6F6;
+        display: block;
+
+        @include transition-all;
+
+        &:hover {
+            background: #2E363C;
+        }
+    }
+}

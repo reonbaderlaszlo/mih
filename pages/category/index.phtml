@@ -1,0 +1,128 @@
+<?php echo $header; ?>
+<main>
+<div class="container-full">
+	<div class="breadcrumb">
+		<ul>
+			<li data-title="»"><a href="#">Főoldal</a></li>
+			<li><a href="#">Kiválaszott elem</a></li>
+		</ul>
+	</div>
+</div>
+<section class="category">
+	<div class="container-full">
+		<div class="sidebar">
+			<div class="filter-section">
+				<h2>Műfaj:</h2>
+				<ul>
+					<li><input id="" type="checkbox"><label for="">regény</label></li>
+					<li><input id="" type="checkbox"><label for="">kisregény</label></li>
+					<li><input id="" type="checkbox"><label for="">novella</label></li>
+				</ul>
+				<a class="btn grey-mini" href="#">Visszaállítás</a>
+			</div>
+			<div class="filter-section">
+				<h2>Téma:</h2>
+				<ul>
+					<li><input id="" type="checkbox"><label for="">életrajz</label></li>
+					<li><input id="" type="checkbox"><label for="">ifjúsági</label></li>
+					<li><input id="" type="checkbox"><label for="">kaland</label></li>
+					<li><input id="" type="checkbox"><label for="">thriller</label></li>
+					<li><input id="" type="checkbox"><label for="">krimi</label></li>
+					<li><input id="" type="checkbox"><label for="">romantika</label></li>
+					<li><input id="" type="checkbox"><label for="">erotika</label></li>
+					<li><input id="" type="checkbox"><label for="">scifi, fantasy</label></li>
+					<li><input id="" type="checkbox"><label for="">szépirodalom</label></li>
+				</ul>
+				<a class="btn grey-mini" href="#">Visszaállítás</a>
+			</div>
+			<div class="filter-section tags">
+				<h2>Címkék:</h2>
+				<ul>
+					<li>
+						<a class="btn brown-mini" href="#">Vadnyugat</a>
+					</li>
+					<li>
+						<a class="btn brown-mini" href="#">Skalp</a>
+					</li>
+					<li>
+						<a class="btn brown-mini" href="#">Meteor</a>
+					</li>
+					<li>
+						<a class="btn brown-mini" href="#">Western</a>
+					</li>
+					<li>
+						<a class="btn brown-mini" href="#">Űrsikló</a>
+					</li>
+					<li>
+						<a class="btn brown-mini" href="#">Vadnyugat</a>
+					</li>
+				</ul>
+			</div>
+			<div class="filter-section">
+				<h2>Egyéb:</h2>
+				<ul>
+					<li><input id="" type="checkbox"><label for="">Megjelent</label></li>
+					<li><input id="" type="checkbox"><label for="">Sorozat része</label></li>
+					<li><input id="" type="checkbox"><label for="">Korhatáros tartalom</label></li>
+				</ul>
+				<a class="btn grey-mini" href="#">Visszaállítás</a>
+			</div>
+			<div class="filter-section">
+				<h2>Jogi besorolás:</h2>
+				<ul>
+					<li><input id="" type="checkbox"><label for="">Szabadon felhasználható</label></li>
+					<li><input id="" type="checkbox"><label for="">Szerző feltüntetése szükséges</label></li>
+					<li><input id="" type="checkbox"><label for="">Szerző engedélye szükséges</label></li>
+				</ul>
+				<a class="btn grey-mini" href="#">Visszaállítás</a>
+			</div>
+		</div>
+		<div class="content">
+			<h1>Kiválasztott kategória</h1>
+			<div class="order clear">
+				<div class="order-type">
+					<a class="btn grey-mini" href="#">ABC</a>
+					<a class="btn grey-mini" href="#">Legújabb</a>
+				</div>
+				<div class="order-view">
+					<a href="#">
+						<svg class="active" width="33px" height="32px" viewBox="58 53 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+						<path d="M58,53 L90,53 L90,59 L58,59 L58,53 Z M58,66 L90,66 L90,72 L58,72 L58,66 Z M58,79 L90,79 L90,85 L58,85 L58,79 Z" id="list-icon" stroke="none"></path>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="grid" width="32px" height="32px" viewBox="107 53 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+					<path d="M107,53 L121,53 L121,67 L107,67 L107,53 Z M107,71 L121,71 L121,85 L107,85 L107,71 Z M125,71 L139,71 L139,85 L125,85 L125,71 Z M125,53 L139,53 L139,67 L125,67 L125,53 Z" id="grid-icon" stroke="none"></path>
+				</svg>
+			</a>
+		</div>
+	</div>
+	<ul class="card-wrapper clear">
+		<?php
+			for ($i=0; $i < 30; $i++) {
+		?>
+		<li>
+			<div class="item">
+				<span class="category-color novel"></span>
+				<a href="#" class="item-cover">
+					<img src="/upload/images/cards/1.png" alt="1">
+				</a>
+				<a href="#" class="item-author">Paula Hawkins</a>
+				<a href="#" class="item-title">The Girls in the Train</a>
+			</div>
+		</li>
+		<?php
+		}
+		?>
+	</ul>
+</div>
+</div>
+</section>
+</main>
+<?php echo $footer; ?>

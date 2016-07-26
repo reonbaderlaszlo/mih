@@ -1,0 +1,85 @@
+<?php echo $header; ?>
+<main>
+<section class="profile profile-mu">
+	<div class="container-full">
+		<div class="sidebar">
+			<div class="small-profile">
+				<div class="profile-picture">
+					<img alt="1" src="/upload/images/author/1.png">
+				</div>
+				<div class="profile-details">
+					<h2 class="profile-name">Andy Weir</h2>
+					<span class="profile-role">szerző</span>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<ul class="profile-menu">
+				<li>
+					<a href="#" class="btn ">Általános</a>
+				</li>
+				<li>
+					<a href="#" class="btn active">Műveim</a>
+				</li>
+				<li>
+					<a href="#" class="btn">Krediteim</a>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="muveim">
+				<h2>Műveim:</h2>
+				<div class="profil-item-list ng-scope" ng-controller="ItemList as items">
+					<table>
+						<tr>
+							<th>Borító</th>
+							<th>Cím</th>
+							<th>Kategória</th>
+							<th>Típus</th>
+							<th>Státusz</th>
+							<th>Szerkesztés</th>
+						</tr>
+						<tr>
+							<td><img class="item-cover" src="/upload/images/cards/1.png"></td>
+							<td class="item-title">The Girl in the Train</td>
+							<td class="category"><span class="category-color novel"></span>novel</td>
+							<td class="type">novella</td>
+							<td class="state">Aktív</td>
+							<td>
+								<a href="#" class="button edit"></a>
+								<a href="#" class="button delete"></a>
+								<a href="#" class="button read"></a>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="item-cover" src="/upload/images/cards/1.png"></td>
+							<td class="item-title">The Girl in the Train</td>
+							<td class="category"><span class="category-color novel"></span>novel</td>
+							<td class="type">novella</td>
+							<td class="state">Aktív</td>
+							<td>
+								<a href="#" class="button edit"></a>
+								<a href="#" class="button delete"></a>
+								<a href="#" class="button read"></a>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="item-cover" src="/upload/images/cards/1.png"></td>
+							<td class="item-title">The Girl in the Train</td>
+							<td class="category"><span class="category-color novel"></span>novel</td>
+							<td class="type">novella</td>
+							<td class="state">Aktív</td>
+							<td>
+								<a href="#" class="button edit"></a>
+								<a href="#" class="button delete"></a>
+								<a href="#" class="button read"></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>

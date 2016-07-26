@@ -1,0 +1,55 @@
+<?php echo $header; ?>
+<main>
+<div class="container-full">
+	<div class="breadcrumb">
+		<ul>
+			<li data-title="»"><a href="#">Főoldal</a></li>
+			<li data-title="»"><a href="#">Szerzők</a></li>
+			<li><a href="#">Kiválasztott szerző</a></li>
+		</ul>
+	</div>
+</div>
+<section class="author">
+	<div class="container-full">
+		<div class="sidebar">
+			<div class="author-details">
+				<img src="/upload/images/author/1.png" alt="1">
+				<div class="author-contact">
+					<span>Telefon:</span>
+					<h3>+36 30 123 4678</h3>
+					<span>Email:</span>
+					<h3>wier.andy@email.com</h3>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content-head">
+				<h1>Andy Weir</h1>
+				<a href="#" class="btn grey-mini edit">Szerkesztés</a>
+			</div>
+			<h3>Bemutatkozás:</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam placeat amet voluptatem quam, iure veritatis, ad atque suscipit, impedit facere, ipsam nam. Voluptate maiores, labore aspernatur eveniet! Earum, quaerat deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<h2>Művei:</h2>
+			<ul class="card-wrapper clear">
+				<?php
+					for ($i=0; $i < 8; $i++) {
+				?>
+				<li>
+					<div class="item">
+						<span class="category-color novel"></span>
+						<a href="#">
+							<img src="/upload/images/cards/1.png" alt="1">
+						</a>
+						<a href="#" class="item-author">Paula Hawkins</a>
+						<a href="#" class="item-title">The Girls in the Train</a>
+					</div>
+				</li>
+				<?php
+				}
+				?>
+			</ul>
+		</div>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>

@@ -1,0 +1,35 @@
+<?php echo $header; ?>
+<main>
+	<div class="container-full">
+		<div class="breadcrumb">
+			<ul>
+				<li data-title="»"><a href="#">Főoldal</a></li>
+				<li><a href="#">Szerzők</a></li>
+			</ul>
+		</div>
+	</div>
+	<section class="authors">
+		<div class="container-full">
+		<h1>Szerzők</h1>
+		<div class="order">
+			<a href="#" class="btn grey-mini">ABC</a>
+		</div>
+			<ul class="clear">
+				<?php
+					for ($i=0; $i < 9; $i++) {
+						
+				?>
+				<li>
+					<a href="#">
+						<img src="/upload/images/author/1.png" alt="1">
+						<div class="name">Christopher Paolini</div>
+					</a>
+				</li>
+				<?php
+				}
+				?>
+			</ul>
+		</div>
+	</section>
+</main>
+<?php echo $footer; ?>

@@ -1,0 +1,110 @@
+/* Authors */
+.authors {
+    position: relative;
+    padding-bottom: 54px;
+
+    .order {
+        float: right;
+    }
+
+    ul {
+        height: 240px;
+        overflow: hidden;
+        margin-top: 70px;
+    }
+
+    li {
+        width: 14.28571%;
+        float: left;
+        margin-bottom: 5px;
+
+        a {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            color: #0F1214;
+
+            @include transition-all;
+
+            &:hover {
+                color: #A6855B;
+            }
+        }
+
+        img {
+            border-radius: 160px;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            font-weight: 300;
+        }
+    }
+}
+
+/* Author */
+section.author {
+    .container-full {
+        max-width: 1140px;
+    }
+    .card-wrapper{
+    	height: auto;
+		li{
+			width: 25%;
+		}
+    }
+
+    .sidebar {
+        width: 33%;
+        float: left;
+        max-width: 300px;
+        padding: 0 10px 10px;
+
+        img {
+            border-radius: 50%;
+            width: 200px;
+            height: auto;
+            margin: 0 auto 20px;
+            border: 1px solid #D6DADD;
+        }
+
+        span {
+            font-family: 'Georgia', serif;
+        }
+    }
+
+    .edit {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    .author-contact {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #D6DADD;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    .author-details {
+        margin-top: 20px;
+    }
+
+    .content {
+        width: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 0 10px 10px;
+    }
+
+    p {
+        font-family: 'Georgia', serif;
+        padding: 10px 0 20px;
+    }
+}

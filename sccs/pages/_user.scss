@@ -1,0 +1,78 @@
+/* Login */
+.login {
+    padding: 100px 0;
+
+    .box {
+        max-width: 480px;
+    }
+
+    .forgot-password {
+        padding-bottom: 10px;
+        text-align: right;
+        font-family: 'Georgia', serif;
+        font-size: 14px;
+
+        a {
+            text-decoration: underline;
+            color: #2E363C;
+            font-weight: 600;
+
+            @include transition-all;
+
+            &:hover {
+                color: #A6855B;
+            }
+        }
+    }
+}
+
+/* Password reminder */
+.password-reminder {
+    padding: 100px 0;
+
+    .box {
+        max-width: 480px;
+    }
+
+    p {
+        padding-bottom: 25px;
+        font-family: "Georgia", sans-serif;
+    }
+}
+
+/* Password modify */
+
+.password-modify {
+    padding-bottom: 100px;
+    .container-full {
+        max-width: 1140px;
+    }
+
+    .box {
+        max-width: 480px;
+        margin-top: 40px;
+    }
+
+    .profile-picture {
+        width: 64px;
+        border-radius: 32px;
+        border: 1px solid #D6DADD;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .profile-details {
+        width: auto;
+        overflow: hidden;
+    }
+
+    .profile-name {
+        font-size: 18px;
+        padding: 10px 0 5px;
+    }
+
+    .profile-role {
+        font-size: 14px;
+    }
+}

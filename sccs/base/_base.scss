@@ -56,6 +56,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    color: #0F1214;
 }
 
 /* Register box */
@@ -415,27 +416,74 @@ body {
         margin: 50px 0 10px;
     }
 }
+
 /* Overlay */
-.overlay{
+.overlay {
     position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
+    display: none;
 }
-.popup{
+
+.popup {
     position: absolute;
     left: 0;
     right: 0;
-    top: 100px;
+    top: 10px;
     padding: 40px 40px 30px;
     margin: 40px auto 40px;
     max-width: 768px;
-    min-width: 320px;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 11;
+    display: none;
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    p {
+        padding: 10px 0 20px;
+        font-family: 'Georgia', serif;
+    }
+}
+
+.close {
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    font-size: 32px;
+    line-height: 32px;
+    display: block;
+    border-radius: 50%;
+    background-color: #D6DADD;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    color: #0F1214;
+
+    @include transition-all;
+
+    &:hover {
+        background-color: #2E363C;
+        color: #F4F6F6;
+    }
+}
+
+/* Template 1 */
+.template-1 {
+    padding: 20px 20px 30px;
+    margin: 0 auto 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    h1 {
+        margin-bottom: 20px;
+    }
 }

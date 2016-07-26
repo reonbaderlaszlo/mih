@@ -1,0 +1,173 @@
+<?php echo $header; ?>
+<main>
+<section class="upload step-2">
+	<div class="container-full">
+		<div class="sidebar">
+			<h1>Feltöltés</h1>
+			<div class="upload-section">
+				<h2>Mű</h2>
+				<ul>
+					<li><span class="status true"></span> A mű adatai</li>
+					<li><span class="status false"></span> Jogi feltételek</li>
+					<li><span class="status false"></span> Borító</li>
+					<li><span class="status false"></span> Mű feltöltése</li>
+				</ul>
+			</div>
+			<div class="upload-section">
+				<h2>Csomag</h2>
+				<ul>
+					<li><span class="status false"></span> Csomag kiválasztása</li>
+					<li><span class="status false"></span> Időszak kiválasztása</li>
+				</ul>
+			</div>
+			<div class="upload-section">
+				<h2>Szerző</h2>
+				<ul>
+					<li><span class="status false"></span>Bejelentkezés</li>
+					<li><span class="status false"></span> Regisztráció</li>
+					<li><span class="status false"></span> Adatellenőrzés</li>
+				</ul>
+			</div>
+			<div class="upload-section">
+				<h2>Fizetés</h2>
+				<ul>
+					<li><span class="status false"></span> Fizetési mód</li>
+					<li><span class="status false"></span> Visszajelzés</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title">
+				<h1 class="main-title">Mű</h1>
+				<h2 class="sub-title">A mű adatai</h2>
+			</div>
+			<div class="upload-flow">
+				<span class="active"></span>
+				<?php
+					for ($i=0; $i < 10; $i++) {
+				?>
+				<span></span>
+				<?php
+				}
+				?>
+			</div>
+			<div class="upload-info clear">
+				<p>Figyelem! A borító szerzői jogával is rendelkezned kell. Ha a borító olyan fotót, térképet, grafikát tartalmaz, amelynek eredetéről nincs adatot, ne töltsd fel!<br>Formátum: jpg, png. Méret: max 2 MB.</p>
+			</div>
+			<form>
+				<div class="form-control clear top">
+					<div class="left">
+						<label>Mű címe:</label>
+						<input type="text" name="">
+					</div>
+					<div class="right">
+						<label>Mű alcíme:</label>
+						<input type="text" name="">
+					</div>
+				</div>
+				<label>Műfaj:</label>
+				<div class="form-control radio_buttons clear">
+					<div class="box">
+						<input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" /><label for="radio1" class="css-label radGroup1">regény</label>
+					</div>
+					<div class="box">
+						<input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" /><label for="radio2" class="css-label radGroup1">kisregény</label>
+					</div>
+					<div class="box">
+						<input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" /><label for="radio3" class="css-label radGroup1">novella</label>
+					</div>
+					<div class="box">
+						<input type="radio" name="radiog_lite" id="radio4" class="css-checkbox" /><label for="radio4" class="css-label radGroup1">Novella</label>
+					</div>
+				</div>
+				<label>Téma:</label>
+				<div class="form-control checkboxes clear">
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label-2">életrajz</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG2" class="css-checkbox" /><label for="checkboxG2" class="css-label-2">thriller</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG3" class="css-checkbox" /><label for="checkboxG3" class="css-label-2">erotika</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="css-label-2">szépirodalom</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG5" class="css-checkbox" /><label for="checkboxG5" class="css-label-2">ifjúsági</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG6" class="css-checkbox" /><label for="checkboxG6" class="css-label-2">krimi</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG7" class="css-checkbox" /><label for="checkboxG7" class="css-label-2">scifi</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG8" class="css-checkbox" /><label for="checkboxG8" class="css-label-2">kaland</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG9" class="css-checkbox" /><label for="checkboxG9" class="css-label-2">romantika</label>
+					</div>
+					<div class="box">
+						<input type="checkbox" name="checkboxG1" id="checkboxG10" class="css-checkbox" /><label for="checkboxG10" class="css-label-2">fantasy</label>
+					</div>
+				</div>
+				<div class="three clear">
+					<div class="left">
+						<label for="">Címkék:</label>
+						<textarea></textarea>
+					</div>
+					<div class="center">
+						<div class="box clear">
+							<label for="">Megjelent-e a mű:</label>
+							<div class="left">
+								<input type="radio" name="radiog_lite" id="radio5" class="css-checkbox" /><label for="radio5" class="css-label radGroup1">Nem</label>
+							</div>
+							<div class="right">
+								<input type="radio" name="radiog_lite" id="radio6" class="css-checkbox" /><label for="radio6" class="css-label radGroup1">Igen</label>
+							</div>
+						</div>
+						<div class="box clear">
+							<label for="">Sorozat része-e:</label>
+							<div class="left">
+								<input type="radio" name="radiog_lite" id="radio7" class="css-checkbox" /><label for="radio7" class="css-label radGroup1">Nem</label>
+							</div>
+							<div class="right">
+								<input type="radio" name="radiog_lite" id="radio8" class="css-checkbox" /><label for="radio8" class="css-label radGroup1">Igen</label>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="box">
+							<label for="">Itt:</label>
+							<input type="text">
+						</div>
+						<div class="box">
+							<label for="">Ennek:</label>
+							<input type="text">
+						</div>
+					</div>
+				</div>
+				<div class="flex-box">
+					<div class="flex-four-item">
+						<label>Csak 18 éven felülieknek ajánlott?</label><br>
+						<input type="radio" name=""> Nem
+						<input type="radio" name=""> Igen
+					</div>
+					<div class="flex-four-item">
+						<label>Igényel-e a mű további tartalmi elemet? (illusztráció, képlet, térkép, grafika)</label><br>
+						<input type="radio" name=""> Nem
+						<input type="radio" name=""> Igen
+					</div>
+				</div>
+			</form>
+			<div class="upload-nav-buttons">
+				<a href="#" class="btn prev grey-mini">Vissza</a>
+				<a href="#" class="btn next brown-mini">Tovább</a>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>

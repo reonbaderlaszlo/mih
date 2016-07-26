@@ -1,0 +1,111 @@
+<?php echo $header; ?>
+<main>
+<section class="upload step-1">
+	<div class="container-full">
+		<div class="sidebar">
+			<h1>Feltöltés</h1>
+			<div class="upload-section">
+				<h2>Mű</h2>
+				<ul>
+					<li><span class="status true"></span> A mű adatai</li>
+					<li><span class="status false"></span> Jogi feltételek</li>
+					<li><span class="status false"></span> Borító</li>
+					<li><span class="status false"></span> Mű feltöltése</li>
+				</ul>
+			</div>
+			<div class="upload-section">
+				<h2>Csomag</h2>
+				<ul>
+					<li><span class="status false"></span> Csomag kiválasztása</li>
+					<li><span class="status false"></span> Időszak kiválasztása</li>
+				</ul>
+			</div>
+			<div class="upload-section">
+				<h2>Szerző</h2>
+				<ul>
+					<li><span class="status false"></span>Bejelentkezés</li>
+					<li><span class="status false"></span> Regisztráció</li>
+					<li><span class="status false"></span> Adatellenőrzés</li>
+				</ul>
+			</div>
+			<div class="upload-section">
+				<h2>Fizetés</h2>
+				<ul>
+					<li><span class="status false"></span> Fizetési mód</li>
+					<li><span class="status false"></span> Visszajelzés</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title">
+				<h1 class="main-title">Mű</h1>
+				<h2 class="sub-title">A mű adatai</h2>
+			</div>
+			<div class="upload-flow">
+				<span class="active"></span>
+				<?php
+					for ($i=0; $i < 10; $i++) {
+				?>
+				<span></span>
+				<?php
+				}
+				?>
+			</div>
+			<div class="upload-info clear">
+				<p>Légy gondos, aprólékos, szánj bőségesen időt az űrlap kitöltésére! Minden okosan odakanyarított betű egy lépés a sikerhez! <br>Mielőtt bármit tennél, olvasd el figyelmesen: </p>
+				<a href="#" class="btn grey-mini">Tudnivalók</a>
+			</div>
+			<h1>Válassz kategóriát!</h1>
+			<ul class="choose-category">
+				<li>
+					<a href="#">
+						<img src="">
+						<h3>Regény, novella</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3>Mese</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3>Vers</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3>Színdarab</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3>Tudományos cikk</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3>Szakmai cikk</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="">
+						<h3>Jegyzet</h3>
+					</a>
+				</li>
+			</ul>
+			<div class="upload-nav-buttons">
+				<a href="#" class="btn prev grey-mini">Vissza</a>
+				<a href="#" class="btn next brown-mini">Tovább</a>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>
